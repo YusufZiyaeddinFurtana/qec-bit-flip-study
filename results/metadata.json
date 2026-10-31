@@ -1,0 +1,34 @@
+{
+  "seed": 20261031,
+  "bit_generator": "PCG64",
+  "shots_per_noise_type_per_probability": 200000,
+  "probabilities": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "noise_types": [
+    "X",
+    "Z"
+  ],
+  "noise_rounds": 1,
+  "interval": "pointwise 95% Wilson score, two-sided",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "platform": "Darwin",
+  "architecture": "arm64"
+}

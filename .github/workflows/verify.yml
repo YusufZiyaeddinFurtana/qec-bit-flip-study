@@ -1,0 +1,24 @@
+name: Verify study
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - name: Regenerate complete study
+        run: python -m qec_study --output /tmp/qec-study
+      - name: Check committed counts against regeneration
+        run: python -c "import csv; from pathlib import Path; fields=('noise','physical_error_probability','shots','uncoded_errors','logical_errors'); read=lambda p:[tuple(r[k] for k in fields) for r in csv.DictReader(Path(p).open())]; assert read('results/performance.csv') == read('/tmp/qec-study/results/performance.csv')"
