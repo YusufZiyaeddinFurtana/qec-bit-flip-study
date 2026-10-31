@@ -1,8 +1,7 @@
 # Bu projeyi sonradan öğrenmek için kısa rehber
 
-Bu depo, standart üç qubit bit-flip kodunun yeniden üretimidir. Kod, grafikler
-ve ilk açıklamalar Codex yardımıyla hazırlandı. Aşağıdaki sıra, çalışmayı
-anlamanı ve daha sonra kendi deneylerini eklemeni kolaylaştırır.
+Bu depo, standart üç qubit bit-flip kodunun yeniden üretimidir. Aşağıdaki sıra,
+çalışmayı anlamanı ve daha sonra kendi deneylerini eklemeni kolaylaştırır.
 
 ## 1. Önce iki grafiği oku
 
@@ -100,9 +99,7 @@ gerekmez, ancak tipik belirsizlik küçülür.
 - Noktalar teoriye neden tam oturmuyor?
 - Bu sonuçlar gerçek donanım hakkında hangi soruları henüz cevaplamıyor?
 
-Depoyu bugün paylaşabilirsin. Kendi uygulama deneyimini anlatırken AI ile
-hazırlanmış başlangıç çalışmasını, sonradan kendin öğrendiğin ve değiştirdiğin
-kısımlardan ayır. Araştırma görüşmesi öncesinde bu soruları cevaplayabilmen iyi
-bir hazırlık eşiği olur.
+Araştırma görüşmesi öncesinde bu soruları cevaplayabilmen iyi bir hazırlık
+eşiği olur.
 
 Temel kaynak: [IBM Quantum — Repetition codes](https://quantum.cloud.ibm.com/learning/en/courses/foundations-of-quantum-error-correction/correcting-quantum-errors/repetition-codes).

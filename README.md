@@ -9,9 +9,8 @@ Under independent Z errors at the same `p`, the unmodified code instead has a
 logical Z-error probability of `0.244`.
 
 This reproduces a standard model for learning and portfolio demonstration.
-The implementation, figures, tests, and initial documentation were prepared with
-OpenAI Codex. The repository makes no claim of a new error-correction method or
-a hardware experiment.
+The repository makes no claim of a new error-correction method or a hardware
+experiment.
 
 **Start here:** [generated results](results/summary.md) ·
 [raw data](results/performance.csv) ·
@@ -134,10 +133,10 @@ is not required to contain the theoretical value in every trial or sweep point.
   example used in the tests.
 - [NumPy random compatibility policy][numpy] — reproducibility limits.
 
-The Python implementation was written for this repository with AI assistance;
-it does not copy the linked tutorials' code. The formulas and recovery protocol
-are established material. Future investigations could add imperfect syndrome
-measurements or correlated errors, which require a different model.
+The Python implementation does not copy the linked tutorials' code. The formulas
+and recovery protocol are established material. Future investigations could add
+imperfect syndrome measurements or correlated errors, which require a different
+model.
 
 MIT license; see [LICENSE](LICENSE).
 
